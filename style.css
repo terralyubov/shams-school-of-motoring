@@ -1,0 +1,172 @@
+/* ========== Base / Reset ========== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #111;
+  background: linear-gradient(#f6f7f9, #ffffff);
+}
+
+img { max-width: 100%; display: block; }
+
+/* ========== Global content width ========== */
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px 24px 24px;
+}
+
+/* ========== Header (full-width, content centred) ========== */
+header {
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 28px 0 20px; /* full-width bar */
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+header h1,
+header p {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  letter-spacing: -0.3px;
+}
+
+header p {
+  margin: 6px 0;
+  opacity: 0.9;
+}
+
+header p strong { font-weight: 700; }
+
+/* ========== Typography ========== */
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+}
+
+p { margin: 10px 0; }
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* ========== Sections (“cards”) ========== */
+section {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 16px 0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+/* Lists */
+ul { margin: 10px 0 0; padding-left: 18px; }
+li { margin: 4px 0; }
+
+/* ========== Hero image (for later) ========== */
+.hero-image {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  margin: 16px 0 0; /* sits nicely under header if you add it there */
+}
+
+/* ========== Testimonials ========== */
+blockquote {
+  margin: 0 0 12px;
+  padding: 14px 16px;
+  border-left: 4px solid #111;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+blockquote p {
+  margin: 0;
+  font-style: italic;
+}
+
+/* ========== Button ========== */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.button:hover { opacity: 0.9; }
+
+/* ========== Small screens ========== */
+@media (max-width: 600px) {
+  main { padding: 12px 16px 20px; }
+
+  header h1,
+  header p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  h1 { font-size: 1.6rem; }
+}
+/* Centre header text */
+header h1,
+header p {
+  text-align: center;
+}
+
+/* Remove default blockquote quote marks */
+blockquote::before,
+blockquote::after {
+  content: none;
+}
+/* Header text polish */
+header h1 {
+  text-align: center;
+}
+
+header p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header p:first-of-type {
+  font-size: 1.05rem;
+  margin-top: 8px;
+}
+
+header p:last-of-type {
+  margin-top: 10px;
+}
+
+/* Testimonials – softer, no quote vibe */
+blockquote {
+  border-left: none;
+  background: #f6f7f9;
+  padding: 14px 16px;
+  border-radius: 12px;
+}
+
+blockquote p {
+  font-style: normal;
+}
+
